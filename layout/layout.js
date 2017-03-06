@@ -1,0 +1,2 @@
+require('./layout.less');
+window.$ = $;

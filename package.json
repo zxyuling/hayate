@@ -8,10 +8,22 @@
   "dependencies": {
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
+    "css": "^2.2.1",
+    "css-loader": "^0.26.2",
     "debug": "~2.2.0",
     "ejs": "~2.5.2",
+    "ejs-loader": "latest",
     "express": "~4.14.0",
+    "extract-text-webpack-plugin": "^2.0.0",
+    "glob": "^7.1.1",
+    "html-loader": "^0.4.5",
+    "jquery": "^3.1.1",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "style": "^0.0.3",
+    "style-loader": "^0.13.2",
+    "webpack": "latest"
   }
 }
