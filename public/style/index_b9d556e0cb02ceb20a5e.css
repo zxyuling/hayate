@@ -1,0 +1,10 @@
+.header {
+  height: 50px;
+  background: #404040;
+  width: 100%;
+}
+.banner {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAuElEQVRIS73W7Q0CIQyA4ZdN3EBH0El0s3MkncAV3ABDcj8ulyv9jPyF9KEQSht/Gm3mdHgCZ+DW4JvZkwityH0N/spih1CHE/DZZZDCZhk9gKUK0+6oDJtCI5sOJZgKVWEmqAIzQ1nMBWUwNxTFQlAEq4bewPWoLoYg4W2JyDgBNxRB3FAUcUEZxAxlERNUgahQFTKFKhEREr7y6TvRGhdrc5JCLHc02q2LVFa0LLbz7srgCb5d+wNbG14bjv6wngAAAABJRU5ErkJggg==);
+  width: 100%;
+  height: 500px;
+}

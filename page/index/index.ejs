@@ -5,7 +5,8 @@
 	<title>Document</title>
 </head>
 <body>
-	index
-	<%include ../../widget/banner/banner.ejs%>
+	${require('../../layout/layout.ejs')}
+	${require('../../widget/banner/banner.ejs')}
+	<h3><%=body%></h3>
 </body>
 </html>

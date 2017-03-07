@@ -9,22 +9,22 @@ var config = {
   output: {
     'path':path.join(__dirname,'public'),
     'publicPath':'/',
-    'filename':'script/[name].js'
+    'filename':'script/[name]_[hash].js'
   },
   module: {
     loaders: [
      {test: /\.less$/, loader: ExtractTextPlugin.extract({fallback:'style-loader',use:'css-loader!less-loader'})},
-     {test: /\.ejs$/, loader: 'html-loader'}
+     {test: /\.ejs$/, loader: 'html-loader?interpolate'},
+     {test: /\.(jpe?g|png|gif|svg)$/i,loader: "url-loader?limit=8192&name=images/[name]_[hash].[ext]"},
     ]
   },
   plugins: [
-    new ExtractTextPlugin("style/[name].css"),
+    new ExtractTextPlugin("style/[name]_[hash].css"),
     new webpack.ProvidePlugin({ //加载jq
       $: 'jquery',
     })
   ]
 }
-
 var htmlfile = glob.sync('page/**/*.ejs'),conf={};
 htmlfile.forEach(function(item,index,arr){
   var extname = path.extname(item);
