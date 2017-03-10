@@ -13,7 +13,7 @@ var config = {
   },
   module: {
     loaders: [
-     {test: /\.less$/, loader: ExtractTextPlugin.extract({fallback:'style-loader',use:'css-loader!less-loader'})},
+     {test: /\.less$/, loader: ExtractTextPlugin.extract({fallback:'style-loader',use:'css-loader!less-loader!autoprefixer-loader?{browsers:["last 20 version", "> 1%"]}'})},
      {test: /\.ejs$/, loader: 'html-loader?interpolate'},
      {test: /\.(jpe?g|png|gif|svg)$/i,loader: "url-loader?limit=8192&name=images/[name]_[hash].[ext]"},
     ]
@@ -22,6 +22,7 @@ var config = {
     new ExtractTextPlugin("style/[name]_[hash].css"),
     new webpack.ProvidePlugin({ //加载jq
       $: 'jquery',
+      'baidu':__dirname+'/node_modules/baidutemplate/baiduTemplate.js'
     })
   ]
 }
